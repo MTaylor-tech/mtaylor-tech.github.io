@@ -22,6 +22,7 @@ h1 {
 
 h2 {
   font-size: 20px;
+	text-align: center;
 }
 
 h3, h4, h5, h6 {
@@ -53,23 +54,28 @@ header {
   padding: 2%;
   width: 46%;
   line-height: 1.5;
-  background: black;
+  background: #660000;
   border-radius: 20px;
+	-moz-box-shadow:    inset 0 0 15px #000000;
+   -webkit-box-shadow: inset 0 0 15px #000000;
+   box-shadow:         inset 0 0 15px #000000;
 }
 
 .category p {
   margin: 10px;
 }
 
-li:before {
-  content: '- ';
-}
-
 footer {
 	display: flex;
 	justify-content: space-around;
+	border-top: 1px dotted white;
+  padding: 10px;
 }
 
 i {
 	color: white;
+}
+
+@media only screen and (max-width : 500px) {
+
 }
