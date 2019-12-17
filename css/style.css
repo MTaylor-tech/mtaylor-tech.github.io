@@ -113,3 +113,12 @@ header {
 li:before {
   content: '- ';
 }
+
+footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+i {
+	color: white;
+}
