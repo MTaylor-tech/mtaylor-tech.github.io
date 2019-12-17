@@ -2,10 +2,9 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
-  background-image: linear-gradient(#990000, black);
   color: white;
 }
 
@@ -41,6 +40,7 @@ header {
 
 .container {
   padding: 5%;
+	background-image: linear-gradient(#990000, black);
 }
 
 .category-box {
@@ -57,8 +57,8 @@ header {
   background: #660000;
   border-radius: 20px;
 	-moz-box-shadow:    inset 0 0 15px #000000;
-   -webkit-box-shadow: inset 0 0 15px #000000;
-   box-shadow:         inset 0 0 15px #000000;
+  -webkit-box-shadow: inset 0 0 15px #000000;
+  box-shadow:         inset 0 0 15px #000000;
 }
 
 .category p {
@@ -70,6 +70,7 @@ footer {
 	justify-content: space-around;
 	border-top: 1px dotted white;
   padding: 10px;
+	padding-bottom: 0px;
 }
 
 i {
