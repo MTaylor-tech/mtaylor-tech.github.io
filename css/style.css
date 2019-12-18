@@ -5,7 +5,7 @@
 html, body {
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
-  color: darkslategrey;
+  color: black;
 }
 
 a {
@@ -35,7 +35,6 @@ nav {
 }
 
 header {
-  border-bottom: 1px dotted black;
   padding: 10px;
 }
 
@@ -45,7 +44,7 @@ header p {
 
 .container {
   padding: 5%;
-  background-color: black;
+  background-color: ABCEF8;
 	background-image: url("IMG_2231.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -56,6 +55,8 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 2%;
+  border-top: 1px dotted black;
 }
 
 .box-header {
@@ -64,11 +65,11 @@ header p {
 }
 
 .category {
-  margin: 2%;
+  margin: 1%;
   padding: 2%;
-  width: 46%;
+  width: 48%;
   line-height: 1.5;
-  background: #89ACD6; /*789BC5;*/
+  background: #ABCEF8; /*789BC5;*/
   border-radius: 20px;
 	-moz-box-shadow:    inset 0 0 15px darkslategrey;
   -webkit-box-shadow: inset 0 0 15px darkslategrey;
@@ -81,11 +82,11 @@ header p {
 }
 
 .category-third {
-  margin: 2%;
+  margin: 1%;
   padding: 2%;
-  width: 28%;
+  width: 31%;
   line-height: 1.5;
-  background: #89ACD6;
+  background: #ABCEF8;
   border-radius: 20px;
 	-moz-box-shadow:    inset 0 0 15px darkslategrey;
   -webkit-box-shadow: inset 0 0 15px darkslategrey;
@@ -98,11 +99,11 @@ header p {
 }
 
 .category-full {
-  margin: 0% 2%;
+  margin: 0% 1%;
   padding: 1vh 4%;
-  width: 96%;
+  width: 98%;
   line-height: 1.5;
-  background: #89ACD6;
+  background: #ABCEF8;
   border-radius: 20px;
 	-moz-box-shadow:    inset 0 0 15px darkslategrey;
   -webkit-box-shadow: inset 0 0 15px darkslategrey;
@@ -117,8 +118,8 @@ header p {
 }
 
 .gallery a {
-  margin: 2%;
-  width: 46%;
+  margin: 1%;
+  width: 48%;
   border-radius: 20px;
 }
 
@@ -139,22 +140,58 @@ footer i {
 	color: white;
 }
 
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 796px) {
   .category {
-    width: 96%;
+    width: 98%;
   }
 
   .gallery a {
-    width: 96%;
+    width: 98%;
+  }
+
+  .category-third {
+    width: 48%;
+  }
+
+  #responsive {
+    border: 2px solid red;
+  }
+
+  #responsive h3 {
+    font-size: 1rem;
+  }
+
+  #responsive p:after {
+    content: " You're looking at me on a small screen.";
+    color: red;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .category {
-    width: 28%;
+    width: 31%;
   }
 
   .gallery a {
-    width: 28%;
+    width: 31%;
+  }
+
+  .category-third {
+    width: 23%;
+  }
+
+  #responsive {
+    border: 2px solid red;
+  }
+
+  #responsive p:after {
+    content: " You're looking at me on a big screen.";
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .category-third {
+    width: 98%;
   }
 }
