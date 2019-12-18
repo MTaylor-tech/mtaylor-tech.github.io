@@ -114,6 +114,10 @@ header p {
   color: black;
 }
 
+.category:last-of-type {
+  width: 98%;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -143,6 +147,10 @@ footer i {
 	color: white;
 }
 
+#PWP {
+  display: none;
+}
+
 @media only screen and (max-width : 796px) {
   .category {
     width: 98%;
@@ -154,6 +162,10 @@ footer i {
 
   .category-third {
     width: 48%;
+  }
+
+  .category-third:last-of-type {
+    width: 98%;
   }
 
   #responsive {
@@ -175,12 +187,20 @@ footer i {
     width: 31%;
   }
 
+  .category:last-of-type {
+    width: 65%;
+  }
+
   .gallery a {
     width: 31%;
   }
 
   .category-third {
     width: 23%;
+  }
+
+  .category-third:last-of-type {
+    width: 98%;
   }
 
   #responsive {
