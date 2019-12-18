@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UBHub.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>armv7s</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>DAD32F6B396BB805ACB0CB048618104F4405569D</string>
+				<key>dateExpires</key>
+				<string>12/17/20</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>D4862A5JQ6.net.Fantasmagorio.UBHub</string>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<string>Production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>D4862A5JQ6</string>
+				<key>com.apple.developer.ubiquity-container-identifiers</key>
+				<array>
+					<string>D4862A5JQ6.net.Fantasmagorio.UBHub</string>
+				</array>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>D4862A5JQ6.net.Fantasmagorio.UBHub</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>D4862A5JQ6.net.Fantasmagorio.UBHub</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>UBHub.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>f2c87e4f-6bdb-4568-88ca-708e10fb48a4</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: net.Fantasmagorio.UBHub</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>D4862A5JQ6</string>
+				<key>name</key>
+				<string>Matthew Taylor</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
