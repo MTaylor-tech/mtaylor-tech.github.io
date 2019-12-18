@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -12,16 +13,41 @@
   <body>
     <div class="container">
       <header>
-        <h1>Matthew Taylor's Portfolio</h1>
+        <h1>Matthew Taylor</h1>
         <nav>
-          <a href="index.html">Portfolio</a>
+          <a href="#about">About Me</a>
+          <a href="#skills">My Skills</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="https://my.indeed.com/p/matthewt-n5g5nik">Resumé</a>
           <a href="mailto:matt@mtaylor.tech">Contact</a>
         </nav>
       </header>
-
-      <div class="category-box">
-
+      <div class="category-box" id="about">
+        <h2 class="box-header">About Me</h2>
+        <section class="category-full">
+          <p>I am a well-rounded intellectual with a wide variety of experiences and interests. Combining my background in performance, education, and technology, I achieve results at the highest possible level and inject creativity and lateral thinking into every endeavor. My Renaissance approach to solving problems and my leadership philosophy of simultaneously improving efficiency and morale in the workplace by focusing on team members' strengths make me an ideal candidate for any project.</p>
+        </section>
+      </div>
+      <div class="category-box" id="skills">
+        <h2 class="box-header">My Skills</h2>
+        <section class="category-third">
+          <h3><i class="fas fa-code"></i></h3>
+          <h2>HTML</h2>
+          <p></p>
+        </section>
+        <section class="category-third">
+          <h3><i class="fab fa-css3"></i></h3>
+          <h2>CSS</h2>
+          <p></p>
+        </section>
+        <section class="category-third">
+          <h3><i class="fas fa-mobile"></i></h3>
+          <h2>Responsive Design</h2>
+          <p></p>
+        </section>
+      </div>
+      <div class="category-box" id="portfolio">
+        <h2 class="box-header">Portfolio</h2>
         <section class="category">
           <h2>Lambda School Projects</h2>
           <p>HTML5 and CSS projects completed as part of my learning at Lambda School.</p>
@@ -64,6 +90,7 @@
           <h2>Programming Projects</h2>
           <p>Arduino (C), Objective-C, and Python projects.</p>
           <ul>
+            <li><a href="https://github.com/MTaylor-tech/Scrutini">Scrutini: a cross-platform program to scrutineer Highland Dance competitions; written in Python.</a></li>
             <li><a href="https://github.com/Teknowizardry/Kordboard">Kordboard: a chording keyboard on Arduino</a></li>
             <li><a href="https://github.com/MTaylor-tech/ubtech">Projects for teaching technology to high school students</a></li>
           </ul>
