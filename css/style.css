@@ -44,7 +44,8 @@ header p {
 
 .container {
   padding: 5%;
-	background-image: linear-gradient(#990000, black);
+  background-color: black;
+	background-image: image('https://mtaylor-tech.github.io/css/IMG_2231.jpeg');
 }
 
 .category-box {
