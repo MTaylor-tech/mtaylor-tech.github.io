@@ -3760,3 +3760,9 @@ input, select, textarea {
 		}
 
 	}
+
+  .uncial-antiqua-regular {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
