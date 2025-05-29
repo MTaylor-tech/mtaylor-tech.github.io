@@ -23,7 +23,7 @@
           ];
           let url_string = window.location.href; 
           let url = new URL(url_string);
-          let n = url.searchParams.get("n");
+          let n = parseInt(url.searchParams.get("n"));
           let songbook_num = 0;
           if (n > 0) {
             songbook_num = n;
