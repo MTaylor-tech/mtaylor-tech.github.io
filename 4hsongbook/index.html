@@ -35,13 +35,15 @@
           }
           console.log(songbook_num);
 
-          let songbook_html = `<div class='songbook'>
-                         <div class='songbook-header'>
+          let songbook_html = `<div class='songbook panel'>
+                         <div class='songbook-header banner' id='songbook-header'>
                             <div class='songbook-title'>West Virginia 4-H Song Book</div>  
                           </div>
-                          <div class='songbook-body'>`;
+                          <div class='songbook-body' id='songbook-body'>`;
 
-
+                            <section class="panel banner right" id="about">
+                              <div class="content color5 span-6-25">
+                                <h1 class="major uncial-antiqua-regular">Matty Taylor (he/him)</h1>
           let songbook_list = `
             <div class='songbook-list'>
               <div class='songbook-list-header'>
