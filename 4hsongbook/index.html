@@ -30,10 +30,9 @@
 
           let songbook_num = 0;
           if (url.searchParams.get("n")) {
-            n = parseInt(url.searchParams.get("n"));
+            n = parseInt(url.search.get("n"));
             songbook_num = n;
           }
-
           let songbook_html = "
             <div class='songbook'>
               <div class='songbook-header'>
