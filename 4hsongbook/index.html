@@ -26,14 +26,11 @@
           console.log(url_string);
           console.log(url);
           let n = parseInt(url.searchParams.get("n"));
-          console.log(n);
 
           let songbook_num = 0;
-          if (url.searchParams.get("n")) {
-            n = parseInt(url.searchParams.get("n"));
+          if (n > 0) {
             songbook_num = n;
           }
-          console.log(songbook_num);
 
           let songbook_html = `<section class='songbook panel'>
                          <div class='songbook-header banner' id='songbook-header'>
@@ -66,7 +63,7 @@
           }
           songbook_html += "</div></div>";
 
-          const wrapper = document.querySelector('#wrapper');
+          const wrapper = document.getElementById('wrapper');
           wrapper.innerHTML = songbook_html;
         </script>
       </div>
