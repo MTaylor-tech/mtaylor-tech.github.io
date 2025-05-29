@@ -34,18 +34,22 @@
             songbook_num = n;
           }
           console.log(songbook_num);
-          
-          let songbook_html = "<div class='songbook'>              <div class='songbook-header'>                <div class='songbook-title'>West Virginia 4-H Song Book</div>              </div>              <div class='songbook-body'>";
+
+          let songbook_html = `<div class='songbook'>
+                         <div class='songbook-header'>
+                            <div class='songbook-title'>West Virginia 4-H Song Book</div>  
+                          </div>
+                          <div class='songbook-body'>`;
 
 
-          let songbook_list = "
+          let songbook_list = `
             <div class='songbook-list'>
               <div class='songbook-list-header'>
                 <div class='songbook-list-title'>Songs</div>
               </div>
               <div class='songbook-list-body'>
                 <ul>
-          ";
+          `;
           for (let i = 0; i < songbook.length; i++) { 
             songbook_list += "<li><a href='" + url.origin + url.pathname + "?n=" + songbook[i].number + "'>" + songbook[i].number + ". " + songbook[i].title + "</a></li>";
             console.log(songbook[i].number + ". " + songbook[i].title);
