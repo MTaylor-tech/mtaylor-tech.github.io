@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WV 4-H Song Book</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/44341eb78c.js" crossorigin="anonymous"></script>
+	</head>
+  <body>
+    <div id="page-wrapper">
+      <!-- Wrapper -->
+      <div id="wrapper">
+        <script>
+          const songbook = [
+            {number: 1, title: "H's Four", lyrics: "I pledge my head to clearer thought\nThat in the life I face\nI’ll make my home, my country\nAnd my world a better place.\n\nI pledge my heart to loyalty\nThat I may surely be\nA champion of justice\nFor all humanity.\n\nI pledge my hands to service\nThat I may always try\nTo give my courage and my strength\nTo those with less than I.\n\nI pledge my health to living\nA life in which I dare\nTo reach out for my brother’s hand,\nTo love and hope and care.\n\nI take my stand, I make my pledge\nAnd each day it means more\nAnd from now on thru all my life\nI’ll pledge the H’s four."},
+            {number: 2, title: "4-H Hymn", lyrics: "Give to me the 4-H\nTo guide my ways and lead me onward still,\nAnd my life will be music sweet and pure,\nWhen I pledge myself to thee.\nIt makes our minds pure in tho’t, word and deed;\nFervently striving we reach our goal.\nSo may God bless 4-H we all do pray,\nIn His name a great A-men."},
+            {number: 3, title: "West Virginia Boys and Girls","West Virginia boys and girls are ever in the lead.\nThey train their heads to think correctly,\nTrain their hands to serve directly.\nO’er their health they’re ever watchful, all advice they heed;\nAnd each and ev’ry heart among them meets another’s need.\n\n(Chorus)\nSo here's to the West Virginia boys and girls,\nAnd the glorious 4-H sign.\nMay the gold, blue, white be ever bright\nAs they wave o’er this land so fine.\n\nWe’ll be four-fold life examples, sturdy, staunch and true.\nWe’re proving what the boys and girls who wear the 4-H sign can do.\nWe form the fourth line of defenders of our banner bright;\nThe red and white and blue shall wave beside gold, blue and white."}
+          ];
+          let url_string = window.location.href; 
+          let url = new URL(url_string);
+          let n = url.searchParams.get("n");
+          let songbook_num = 0;
+          if n > 0 {
+            songbook_num = n;
+          }
+
+          let songbook_html = "
+            <div class='songbook'>
+              <div class='songbook-header'>
+                <div class='songbook-title'>West Virginia 4-H Song Book</div>
+              </div>
+              <div class='songbook-body'>
+          ";
+
+          let songbook_list = "
+            <div class='songbook-list'>
+              <div class='songbook-list-header'>
+                <div class='songbook-list-title'>Songs</div>
+              </div>
+              <div class='songbook-list-body'>
+                <ul>
+          ";
+          for (let i = 0; i < songbook.length; i++) { 
+            songbook_list += "<li><a href='" + url.origin + url.pathname + "?n=" + songbook.number + "'>" + songbook[i].number + ". " + songbook[i].title + "</a></li>";
+          } 
+          songbook_list += "</ul></div></div>";
+          if (songbook_num > 0) {
+            songbook_html += "<div class='songbook-song'>" + songbook[songbook_num-1].lyrics + "</div>";
+          } else {
+            songbook_html += songbook_list;
+          }
+          songbook_html += "</div></div>";
+        </script>
+
+      </div>
+    </div>
