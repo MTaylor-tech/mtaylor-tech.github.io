@@ -54,7 +54,7 @@
       const selectedNumber = parseInt(songSelect.value);
       const selectedSong = songs.find(song => song.number === selectedNumber);
       if (selectedSong) {
-        lyricsDiv.innerText = selectedSong.title + "-----------------------------\n\n" + selectedSong.lyrics.join("\n");
+        lyricsDiv.innerText = selectedSong.title + "\n-----------------------------------------\n\n" + selectedSong.lyrics.join("\n");
       } else {
         lyricsDiv.innerText = "";
       }
