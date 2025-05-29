@@ -46,7 +46,8 @@
                 <ul>
           ";
           for (let i = 0; i < songbook.length; i++) { 
-            songbook_list += "<li><a href='" + url.origin + url.pathname + "?n=" + songbook.number + "'>" + songbook[i].number + ". " + songbook[i].title + "</a></li>";
+            songbook_list += "<li><a href='" + url.origin + url.pathname + "?n=" + songbook[i].number + "'>" + songbook[i].number + ". " + songbook[i].title + "</a></li>";
+            console.log(songbook[i].number + ". " + songbook[i].title);
           } 
           songbook_list += "</ul></div></div>";
           if (songbook_num > 0) {
