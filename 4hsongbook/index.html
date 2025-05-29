@@ -36,7 +36,32 @@
   <div id="lyrics" class="lyrics-container"></div>
 
   <script>
-    const songs = [
+    const songs = loadMusic();
+
+    const songSelect = document.getElementById("songSelect");
+    const lyricsDiv = document.getElementById("lyrics");
+
+    // Populate dropdown with songs
+    songs.forEach(song => {
+      const option = document.createElement("option");
+      option.value = song.number;
+      option.textContent = song.title;
+      songSelect.appendChild(option);
+    });
+
+    // Display lyrics when a song is selected
+    function displayLyrics() {
+      const selectedNumber = parseInt(songSelect.value);
+      const selectedSong = songs.find(song => song.number === selectedNumber);
+      if (selectedSong) {
+        lyricsDiv.innerText = "<h2>" selectedSong.title + "</h2>\n" + selectedSong.lyrics.join("\n");
+      } else {
+        lyricsDiv.innerText = "";
+      }
+    }
+
+    function loadMusic() {
+      const songs = [
       {
         number: 1,
         title: "H's Four",
@@ -104,27 +129,6 @@
         ]
       }
     ];
-
-    const songSelect = document.getElementById("songSelect");
-    const lyricsDiv = document.getElementById("lyrics");
-
-    // Populate dropdown with songs
-    songs.forEach(song => {
-      const option = document.createElement("option");
-      option.value = song.number;
-      option.textContent = song.title;
-      songSelect.appendChild(option);
-    });
-
-    // Display lyrics when a song is selected
-    function displayLyrics() {
-      const selectedNumber = parseInt(songSelect.value);
-      const selectedSong = songs.find(song => song.number === selectedNumber);
-      if (selectedSong) {
-        lyricsDiv.innerText = "<h2>" selectedSong.title + "</h2>\n" + selectedSong.lyrics.join("\n");
-      } else {
-        lyricsDiv.innerText = "";
-      }
     }
 
     // Initialize with the first song
