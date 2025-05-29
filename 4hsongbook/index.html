@@ -45,7 +45,8 @@
           "That in the life I face", 
           "I’ll make my home, my country", 
           "And my world a better place.", 
-          "\n", "I pledge my heart to loyalty", 
+          "\n", 
+          "I pledge my heart to loyalty", 
           "That I may surely be", 
           "A champion of justice", 
           "For all humanity.", 
@@ -120,7 +121,7 @@
       const selectedNumber = parseInt(songSelect.value);
       const selectedSong = songs.find(song => song.number === selectedNumber);
       if (selectedSong) {
-        lyricsDiv.innerText = selectedSong.lyrics.join("\n");
+        lyricsDiv.innerText = "<h2>" selectedSong.title + "</h2>\n" + selectedSong.lyrics.join("\n");
       } else {
         lyricsDiv.innerText = "";
       }
