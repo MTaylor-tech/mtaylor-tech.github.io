@@ -55,7 +55,9 @@
             for (let i = 0; i < lyrics.length; i++) {
               lyrics_html +="<p>" + songbook[songbook_num-1].lyrics[i] + "</p>";
             }
-            <div class='songbook-song-header'>
+            lyrics_html += "</div>";
+
+            songbook_html +=`<div class='songbook-song-header'>
               <div class='songbook-song-title'>` + songbook[songbook_num-1].number + `. ` + songbook[songbook_num-1].title + `</div>
               <div class='songbook-song'>` + lyrics_html + `</div>
             </div>`;
