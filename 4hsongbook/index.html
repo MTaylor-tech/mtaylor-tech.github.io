@@ -623,7 +623,6 @@
           ]
         },
         {
-          number: 74,
           title: "West Virginia Boys and Girls", 
           lyrics: [
             "West Virginia boys and girls are ever in the lead.", 
@@ -645,6 +644,11 @@
           ]
         }
       ];
+      num = 1;
+      songs.forEach((song) => {
+        song.number = num;
+        num++;
+      }
       return songs;
     }
 
