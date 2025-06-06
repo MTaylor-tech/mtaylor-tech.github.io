@@ -57,6 +57,10 @@
       const selectedSong = songs.find(song => song.number === selectedNumber);
       if (selectedSong) {
         lyricsDiv.innerText = selectedSong.title + "\n-----------------------------------------\n\n" + selectedSong.lyrics.join("\n");
+        if (history.pushState) {
+          var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?n=' + selectedNumber;
+          window.history.pushState({path:newurl},'',newurl);
+        }
       } else {
         lyricsDiv.innerText = "";
       }
