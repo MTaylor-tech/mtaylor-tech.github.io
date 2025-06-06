@@ -2791,7 +2791,11 @@
         let url = new URL(url_string);
         
         let n = parseInt(url.searchParams.get("n"));
-        songSelect.value = n;
+        if (n > 0) {
+          songSelect.value = n;
+        } else {
+          songSelect.value = 0;
+        }
         displayLyrics();
       }
     };
