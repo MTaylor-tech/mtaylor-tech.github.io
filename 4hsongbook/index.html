@@ -56,6 +56,7 @@
       const selectedNumber = parseInt(songSelect.value);
       const selectedSong = songs.find(song => song.number === selectedNumber);
       if (selectedSong) {
+        window.location.href = "index.html?n=" + selectedNumber;
         lyricsDiv.innerText = selectedSong.title + "\n-----------------------------------------\n\n" + selectedSong.lyrics.join("\n");
       } else {
         lyricsDiv.innerText = "";
@@ -2791,6 +2792,7 @@
         let songbook_num = 0;
         if (n > 0) {
           songbook_num = n;
+          window.location.href = "index.html?n=" + songbook_num;
         }
         songSelect.value = songs[songbook_num].number;
         displayLyrics();
