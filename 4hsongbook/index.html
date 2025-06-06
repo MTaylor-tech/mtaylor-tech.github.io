@@ -56,7 +56,6 @@
       const selectedNumber = parseInt(songSelect.value);
       const selectedSong = songs.find(song => song.number === selectedNumber);
       if (selectedSong) {
-        window.location.href = "index.html?n=" + selectedNumber;
         lyricsDiv.innerText = selectedSong.title + "\n-----------------------------------------\n\n" + selectedSong.lyrics.join("\n");
       } else {
         lyricsDiv.innerText = "";
@@ -2773,7 +2772,7 @@
           ]
         }
       ];
-      num = 1;
+      num = 0;
       songs.forEach((song) => {
         song.number = num;
         num++;
