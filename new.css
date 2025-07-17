@@ -160,17 +160,17 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .circle {
-  width:100px;
-  height:100px;
+  width:20vh;
+  height:20vh;
   border-radius: 50%;
   border:none;
   background-color:black;
   color: yellow;
   text-align: center;
-  padding: 20%;
+  padding: 10px;
   text-decoration: none;
   vertical-align: middle;
-  font-size: 40%;
+  font-size: 16vh;
 }
 
 .social {
