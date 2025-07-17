@@ -3766,3 +3766,7 @@ input, select, textarea {
     font-weight: 400;
     font-style: normal;
   }
+  
+  .smaller {
+    font-size: 0.8em;
+  }
