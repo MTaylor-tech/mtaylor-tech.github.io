@@ -3769,4 +3769,6 @@ input, select, textarea {
   
   .smaller {
     font-size: 0.6em;
+    padding: 0;
+    margin: 0;
   }
