@@ -138,6 +138,20 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-decoration: none;
 }
 
+.link-yellow:hover {
+  color: white;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.link-yellow:visited {
+  color: yellow;
+  font-style: normal;
+  text-decoration: none;
+}
+
+
+
 .button {
   background-color: #000000;
   border-radius: 10px;
