@@ -125,3 +125,15 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 .padded {
   padding: 20px;
 }
+
+a {
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #000000;
+  border-radius: 10px;
+  color: yellow;
+}
