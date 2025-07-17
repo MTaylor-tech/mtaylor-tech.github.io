@@ -132,6 +132,12 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   text-decoration: none;
 }
 
+.link-yellow {
+  color: yellow;
+  font-style: normal;
+  text-decoration: none;
+}
+
 .button {
   background-color: #000000;
   border-radius: 10px;
@@ -150,5 +156,5 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   padding: 20%;
   text-decoration: none;
   vertical-align: middle;
-  font-size: 14vh;
+  font-size: 40%;
 }
