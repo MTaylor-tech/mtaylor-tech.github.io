@@ -214,17 +214,9 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 			object-position: 25% 75%;
 		}
 
-		.image img {
-			display: block;
-		}
-
 		.image.left, .image.right {
 			max-width: 40%;
 		}
-
-			.image.left img, .image.right img {
-				width: 100%;
-			}
 
 		.image.left {
 			float: left;
