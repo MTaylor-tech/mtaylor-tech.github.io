@@ -200,6 +200,5 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .banner {
-  width: 100%;
   margin: 20px;
 }
