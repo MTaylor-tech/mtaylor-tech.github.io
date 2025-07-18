@@ -163,7 +163,8 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 .link {
   color: black;
   font-style: normal;
-  text-decoration: none;
+  text-decoration:underline;
+  text-decoration-style: dotted;
 }
 
 .link-yellow {
