@@ -185,7 +185,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .headline {
-  font-size: 2em;
+  font-size: 4em;
   font-weight: bold;
   padding: 10px;
   margin: 10px;
