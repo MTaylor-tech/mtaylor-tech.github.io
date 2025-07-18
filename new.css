@@ -78,11 +78,11 @@ img {
 }
 
 .max-w30 {
-  max-width: 30vh;
+  max-width: 30vw;
 }
 
 .max-w40 {
-  max-width: 40vh;
+  max-width: 40vw;
 }
 
 .max-h50 {
@@ -160,17 +160,17 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 .circle {
-  width:20vh;
-  height:20vh;
+  width:20px;
+  height:20px;
   border-radius: 50%;
   border:none;
   background-color:black;
   color: yellow;
   text-align: center;
-  padding: 10px;
+  padding: 2px;
   text-decoration: none;
   vertical-align: middle;
-  font-size: 16vh;
+  font-size: 16px;
 }
 
 .social {
