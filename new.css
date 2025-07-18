@@ -181,3 +181,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   padding: 10px;
   margin: 10px;
 }
+
+.icon {
+  margin: 10px;
+}
