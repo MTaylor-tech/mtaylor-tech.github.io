@@ -126,35 +126,9 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   padding: 20px;
 }
 
-.link {
-  color: black;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.link-yellow {
-  color: yellow;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.link-yellow:hover {
-  color: white;
-  font-style: normal;
-  text-decoration: underline;
-}
-
-.link-yellow:visited {
-  color: yellow;
-  font-style: normal;
-  text-decoration: none;
-}
-
-
-
 .button {
-  background-color: yellow;
-  border-radius: 10px;
+  background-color: #ffff66;
+    border-radius: 10px;
   color: black;
   padding: 10px;
 }
@@ -165,7 +139,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   border-radius: 50%;
   border:none;
   background-color:black;
-  color: yellow;
+  color: #ffff66;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -184,4 +158,28 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 
 .icon {
   margin: 10px;
+}
+
+.link {
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.link-yellow {
+  color: #ffff66;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.link-yellow:hover {
+  color: yellow;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.link-yellow:visited {
+  color: #ffff66;
+  font-style: normal;
+  text-decoration: none;
 }
