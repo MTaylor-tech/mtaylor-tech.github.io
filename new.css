@@ -202,3 +202,8 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 .banner {
   margin: 20px;
 }
+
+.centered {
+  text-align: center;
+  justify-content: center;
+}
