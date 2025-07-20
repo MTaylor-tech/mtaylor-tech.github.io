@@ -77,6 +77,10 @@ img {
   flex-direction: column;
 }
 
+.max-w20 {
+  max-width: 20vw;
+}
+
 .max-w30 {
   max-width: 30vw;
 }
