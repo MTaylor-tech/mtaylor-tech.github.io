@@ -77,15 +77,21 @@ img {
   flex-direction: column;
 }
 
+.max-w20 {
+  max-width: 20vw;
+}
+
 .max-w30 {
-  max-width: 30vh;
+  max-width: 30vw;
 }
 
 .max-w40 {
-  max-width: 40vh;
+  max-width: 40vw;
 }
 
-.max-h50
+.max-h50 {
+  max-height: 50vh;
+}
 
 table, th, td {
   color: black;
