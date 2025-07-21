@@ -200,6 +200,10 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
   -webkit-text-stroke: 1px black;
 }
 
+.width-200 {
+  width: 200px;
+}
+
 .width-100 {
   width: 100%;
 }
